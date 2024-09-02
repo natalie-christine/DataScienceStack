@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv(r"C:\Users\JodaBook\Documents\Python\Kursmaterialien\data\astronauts.csv")
+df = pd.read_csv(r'C:\Users\JodaBook\Documents\Python\Python\astronauts.csv')
 
 #print(df.head())
 #print(len(df))
