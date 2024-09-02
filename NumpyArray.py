@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
+
 xs = np.arange(10)
 ys = xs ** 2
 

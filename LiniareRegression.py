@@ -6,8 +6,8 @@ from sklearn.linear_model import LinearRegression
 df = pd.read_csv(r'C:\Users\JodaBook\Documents\Python\Python\names.csv')
 
 # Name, Geschlecht und Staat filtern
-name = "Natalie"
-gender = "F"
+name = "Martin"
+gender = "M"
 state = "CA"
 
 df_filtered = df[(df["Name"] == name) & (df["Gender"] == gender) & (df["State"] == state)]

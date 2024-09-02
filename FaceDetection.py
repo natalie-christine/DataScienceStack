@@ -2,15 +2,15 @@ import cv2
 import matplotlib.pyplot as plt
 import numpy as np
 
-img = cv2.imread(r"C:\Users\JodaBook\Documents\Python\Python\DataScienceStack\foto.jpeg")
+img = cv2.imread(r"C:\Users\JodaBook\Documents\Python\Python\DataScienceStack\katze.jpg")
 
 #print(img.shape)
 i = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 grey = cv2.cvtColor(i, cv2.COLOR_BGR2GRAY)
 
-classifier = cv2.CascadeClassifier(r'C:\Users\JodaBook\Documents\Python\Kursmaterialien\data\haarcascades\haarcascade_frontalface_default.xml')
+classifier = cv2.CascadeClassifier(r'C:\Users\JodaBook\Documents\Python\Kursmaterialien\data\haarcascades\haarcascade_frontalcatface.xml')
 
-faces = classifier.detectMultiScale(grey, minNeighbors=4)
+faces = classifier.detectMultiScale(grey, minNeighbors=3)
 print(faces)
 
 c = img.copy()

@@ -2,8 +2,8 @@ import pandas as pd
 
 df = pd.read_csv(r'C:\Users\JodaBook\Documents\Python\Python\astronauts.csv')
 
-#print(df.head())
-#print(len(df))
+# print(df.head())
+# print(len(df))
 # for name in df["Name"]:
 #     print(name)
 #     break
